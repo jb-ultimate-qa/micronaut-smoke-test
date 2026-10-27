@@ -13,5 +13,8 @@ The UI tests find gutter icons by the text of a line. Do not change these lines 
 | `PersonController.java` | `eventPublisher.publishEvent` | The publisher gutter icon navigates to `PersonSearchListener`. |
 | `PersonSearchListener.java` | `void onPersonSearched` | The listener gutter icon navigates to the `publishEvent` call. |
 
+No class injects `PersonStatistics`. The bean injection completion test injects it into `PersonSearchListener`.
+Do not add a constructor or a field to `PersonSearchListener`.
+
 The Endpoints tool window shows `/person/all` and `/person/byName/{name}`.
 The application starts on port 9091 and fills an in-memory H2 database on startup.
